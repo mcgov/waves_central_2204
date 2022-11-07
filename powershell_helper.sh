@@ -24,6 +24,9 @@ wine ./PowerShell-6.2.4-win-x64.msi
 # the powershell exe we just installed is called pwsh.exe
 # so: make a copy that's called powershell.exe, a hardlink might work too idk
 cp ~/.wine/drive_c/Program\ Files/PowerShell/6/pwsh.exe ~/.wine/drive_c/Program\ Files/PowerShell/6/powershell.exe
+# backup if that doesn't work for you, just copy that bad boy over. oh probably use a wineprefix just for this btw
+cp -r ~/.wine/drive_c/Program\ Files/PowerShell/6/* ~/.wine/drive_c/windows/system32/WindowsPowerShell/v1.0/
+cp -r ~/.wine/drive_c/Program\ Files/PowerShell/6/* ~/.wine/drive_c/windows/syswow64/WindowsPowerShell/v1.0/
 
 # tada!
 # now you should be able to install Waves Central v12 and above like so:
