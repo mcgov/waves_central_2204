@@ -12,7 +12,7 @@
 sudo apt-get install winbind
 
 # plugins and central need corefonts and gdiplus (maybe some other stuff idk)
-winetricks --unattended corefonts gdilus
+winetricks --unattended corefonts gdiplus
 
 # get powershell release (7 might work too, grabbing a 6 release arbitrarily)
 wget https://github.com/PowerShell/PowerShell/releases/download/v6.2.4/PowerShell-6.2.4-win-x64.msi
